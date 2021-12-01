@@ -14,7 +14,8 @@ let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 let restart = document.getElementById("restart")
 restart.style.display = "none"
-//restart.style.visibility = "visible"
+
+// function to generate a card for us for the black jack game
 function getRandomCard() 
 {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -36,6 +37,7 @@ function getRandomCard()
     }
 }
 
+// fucntion where the games starts and get initialised
 function startGame() 
 {
     player.name = prompt("please enter your name" , "")
@@ -47,6 +49,7 @@ function startGame()
     renderGame()
 }
 
+//function where most of the core happens basically calculates where we are in the game right now
 function renderGame()
 {
     cardsEl.textContent = "Cards: "
@@ -75,7 +78,7 @@ function renderGame()
 
 }
 
-
+// function to draw a new cards by checking if we are allowed to have a new card or no
 function newCard() 
 {
     if (isAlive === true && hasBlackJack === false) 
@@ -86,4 +89,3 @@ function newCard()
         renderGame()        
     }
 }
-
