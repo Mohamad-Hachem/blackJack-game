@@ -1,7 +1,10 @@
 "# blackJack-game" 
-this is a test
-again
+<ins>This is a blackJack Game that will allow you to:</ins>
+* play a blackJack game on your tab
+* see how the javacript and HTML CSS can interact
 
+### this is a simple git command to start things running
+```
 echo "# blackJack-game" >> README.md
 git init
 git add README.md
@@ -13,3 +16,4 @@ git push -u origin main
 git remote add origin https://github.com/Mohamad-Hachem/blackJack-game.git
 git branch -M main
 git push -u origin main
+```
